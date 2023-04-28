@@ -1,0 +1,9 @@
+main {
+    margin: 10rem auto 0;
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    margin-left: .5rem;
+}

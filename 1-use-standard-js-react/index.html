@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <main id="root"></main>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script>
+       
+        const root = document.getElementById('root');
+
+
+        // 1
+        const title_1 = React.createElement('h3', {
+            children: 'Unlimited access',
+            className: 'font-bold'
+        });
+        const body_1 = React.createElement('p', {
+            children: 'Enjoy unlimited, unrestricted access to our content library, suite of eLearning courses and live events for your entire organisation.'
+        });
+        const wrapper_1 = React.createElement('div', {
+            children: [title_1, body_1],
+            className: 'my-4'
+        });
+
+
+        // 2
+        const title_2 = React.createElement('h3', {
+            children: 'Integration options',
+            className: 'font-bold'
+        });
+        const body_2 = React.createElement('p', {
+            children: 'Choose the best integration option for your organisation – download, embed or stream via our learning platform.'
+        });
+        const wrapper_2 = React.createElement(React.Fragment, {
+            children: [title_2, body_2],
+            className: 'my-4'
+        });
+
+
+        // 3
+        const title_3 = React.createElement('h3', {className: 'font-bold'}, 'Continuous support');
+        const body_3 = React.createElement('p', null, 'Harness the power of the inrehearsal community team to build pathways, align content and curate our content for your organisation.');
+        const wrapper_3 = React.createElement('div', {className: 'my-4'}, title_3, body_3);
+
+
+        // 4
+        const wrapper_4 = React.createElement(
+            'div',
+            {className: 'my-4'},
+            React.createElement('h3', {className: 'font-bold'}, 'Bespoke solutions'),
+            React.createElement('p', null, 'Tap into the expertise of the inrehearsal team to design and build your own learning content and experiences.'),
+        )
+
+        ReactDOM.render([wrapper_1, wrapper_2, wrapper_3, wrapper_4], root);
+    </script>
+</body>
+</html>

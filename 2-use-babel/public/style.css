@@ -1,0 +1,25 @@
+.box-2 {
+    font-family: sans-serif;
+    padding: 50px;
+    border: 1px solid black;
+    margin: 20px 0;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.box-3 {
+    font-family: sans-serif;
+    padding: 50px;
+    border: 1px solid black;
+    margin: 20px 0;
+    background-color: azure;
+    text-align: center;
+}
+
+.button-1 {
+    padding: 50px;
+    border: 1px solid black;
+    margin: 100px 0;
+    background-color: burlywood;
+    text-align: center;
+}
